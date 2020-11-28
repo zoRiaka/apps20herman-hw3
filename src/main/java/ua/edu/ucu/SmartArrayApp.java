@@ -86,7 +86,8 @@ public class SmartArrayApp {
         MyFunction myFunction = new MyFunction() {
             @Override
             public Object apply(Object student) {
-                return ((Student) student).getSurname() + " " + ((Student) student).getName();
+                return ((Student) student).getSurname() + " "
+                    + ((Student) student).getName();
             }
         };
 
