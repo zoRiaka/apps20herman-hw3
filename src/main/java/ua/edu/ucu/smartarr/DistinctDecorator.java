@@ -14,7 +14,8 @@ public class DistinctDecorator extends SmartArrayDecorator{
 
     @Override
     public Object[] toArray() {
-        LinkedHashSet<Object> linkedHashSet = new LinkedHashSet<>(Arrays.asList(begrray));
+        LinkedHashSet<Object> linkedHashSet;
+        linkedHashSet = new LinkedHashSet<>(Arrays.asList(begrray));
         Object[] withoutDuplicates = linkedHashSet.toArray(new Object[] {});
         return withoutDuplicates;
     }
