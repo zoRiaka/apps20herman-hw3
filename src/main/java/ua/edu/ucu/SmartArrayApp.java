@@ -62,7 +62,8 @@ public class SmartArrayApp {
         MyPredicate myPredicate = new MyPredicate() {
             @Override
             public boolean test(Object student) {
-                if (((Student) student).getYear() == year && ((Student) student).getGPA() >= average) {
+                if (((Student) student).getYear() == year &&
+                    ((Student) student).getGPA() >= average) {
                         return true;
                     }
                 return false;
