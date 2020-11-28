@@ -14,6 +14,6 @@ import java.util.Comparator;
 public interface MyComparator extends Comparator<Object> {
 
     @Override
-    int compare(Object objct1, Object objct2);
+    int compare(Object first, Object second);
     
 }
