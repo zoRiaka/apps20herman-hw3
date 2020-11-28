@@ -19,7 +19,7 @@ public class FilterDecorator extends SmartArrayDecorator {
         Object[] newAr = new Object[size()];
         int newSize = 0;
         for (int i = 0; i < begrray.length; i++) {
-            if(predicate.test(begrray[i])) {
+            if (predicate.test(begrray[i])) {
                 newAr[newSize] = begrray[i];
                 newSize++;
             }
@@ -37,7 +37,7 @@ public class FilterDecorator extends SmartArrayDecorator {
     public int size() {
         int newSize = 0;
         for (int i = 0; i < begrray.length; i++) {
-            if(predicate.test(begrray[i])) {
+            if (predicate.test(begrray[i])) {
                 newSize++;
             }
         }
