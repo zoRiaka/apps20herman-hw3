@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 
 // Remove duplicates from SmartArray. Use method equals() to compare objects
-public class DistinctDecorator extends SmartArrayDecorator{
+public class DistinctDecorator extends SmartArrayDecorator {
     private Object[] begrray;
 
     public DistinctDecorator(SmartArray smartArray) {
